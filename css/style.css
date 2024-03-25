@@ -1,0 +1,77 @@
+header{
+    background-color: #102E9E;
+}
+.header_content .header_logo{
+    width: 70px;
+}
+.header_content .hospital_logo h2{
+    display: inline-block;
+    color: white;
+    text-align: left;
+    margin-left: 5px;
+}
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 16px 0;
+    color: white;
+}
+
+.header_content .logo_list ul{
+    list-style: none;
+    
+}
+.header_content .logo_list li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.header_content .logo_list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.header_content .logo_list{
+    /* line-height: calc(111 / 16); */
+    padding: 10px 0;
+}
+.header_content .logo_list__location a{
+    color: #FFDF5F;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 16px;
+}
+.header_content .logo_list ul i{
+    color: #7CC5EA;
+}
+
+/* END HEADER */
+
+/* NAV START */
+.list{
+    margin: 10px;
+}
+.list ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    /* padding: 10px 0; */
+    /* line-height: 1.42857143; */
+}
+.list ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #337ab7;
+    padding: 10px 20px;
+}
+.list ul a:hover{
+    color: #23527c;
+    background-color: #eee;
+}
+.list ul li{
+    height: 100%;
+    display: inline-block;
+}
+/* END NAV */
+
