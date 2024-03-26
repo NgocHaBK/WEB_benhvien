@@ -223,27 +223,28 @@
         </div>
         <div class="main_infor">
             <div class="main_infor_detail">
-                <h2>24</h2>
+                <h2 class="counter" data-counter-time="1500">
+                    24</h2>
                 <p>Giáo sư - P. Giáo sư</p>
             </div>
             <div class="main_infor_detail">
-                <h2>171</h2>
+                <h2 class="counter" data-counter-time="1500">171</h2>
                 <p>Tiến sĩ - Bác sĩ CKII</p>
             </div>
             <div class="main_infor_detail">
-                <h2>490</h2>
+                <h2 class="counter" data-counter-time="1500">490</h2>
                 <p>Thạc sĩ - Bác sĩ CKI</p>
             </div>
-            <div class="main_infor_detail">
-                <h2>786</h2>
+            <div class="main_infor_detail ">
+                <h2 class="counter" data-counter-time="1500">786</h2>
                 <p>Bác sĩ</p>
             </div>
             <div class="main_infor_detail">
-                <h2>155</h2>
+                <h2 class="counter" data-counter-time="1500">155</h2>
                 <p>Kỹ thuật viên</p>
             </div>
             <div class="main_infor_detail">
-                <h2>803</h2>
+                <h2 class="counter" data-counter-time="1500">803</h2>
                 <p>Điều dưỡng</p>
             </div>
         </div>
@@ -305,6 +306,22 @@
     <section class="video_intro"></section>
     <footer></footer>
 
+    <!-- JQUERY LIB -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+     <!-- WAYPOINT LIB -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+            integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- jquery js -->
+            <script src="./js/jquery.countup.js"></script>
+           <script>
+            $('.counter').countUp({
+                'delay':10
+            });
+           </script>
     <!-- SLICK CAROUSEL -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
         integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
