@@ -85,6 +85,10 @@ header{
 }
 /* END CAROUSEL */
 /* ACHIEVEMENT */
+.achievement{
+    background-color: #eee;
+    margin-bottom: 16px;
+}
 .achievement .achievement_content{
     display: flex;
     justify-content: center;
@@ -135,7 +139,7 @@ header{
 .values_content{
     display: flex;
     justify-content: center;
-    padding: 80px 0;
+    padding: 70px 0 50px;
 }
 .values_content .values_item_detail{
     text-align:center;
@@ -168,4 +172,183 @@ header{
         left: 0;
         top: 0;
 }
+.values .values_item a{
+    text-decoration: none;
+    color: black;
+}
+.values .values_item{
+    padding: 10px;
+}
+.values .values_content .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.values .item:after{
+    content:"";
+    height: 0;
+    width: 10px;
+    background-color: #FFD658;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+}
+.values .item:hover:after{
+    height: 100%;
+}
 /* END VALUES */
+/* INFOR_EMPLOYER */
+.infor_employer{
+    margin-bottom: 40px;
+}
+.infor_employer .infor_title h2{
+    position: relative;
+    display: inline-block;
+    color: #1691E2;
+    font-weight: normal;
+}
+.infor_employer .infor_title h2::after{
+    content: "";
+        /* display: block; */
+    height: 1px;
+    position: absolute;
+    bottom: -16px;
+    /* left: calc(50% - 35px); */
+    left: 0;
+    border-bottom: 5px solid #5D5D5D;
+    width: 70px;
+    padding-bottom: 10px;
+}
+.infor_employer .infor_title p{
+    margin: 25px 0 35px;
+}
+.main_infor{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.main_infor .main_infor_detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    width: calc(25% - 14px);
+    margin-left: 7px;
+    margin-right: 7px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.35);
+    min-height: 140px;
+
+}
+.main_infor_detail h2{
+    color: #1691E2;
+    font-size: 40px;
+    font-weight: normal;
+}
+.main_infor_detail p{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.infor_employer .view{
+    text-align: center;
+}
+.infor_employer .view_expert{
+    padding: 10px 30px;
+    font-size: 24px;
+    background-color: #1691E2;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+.infor_employer .view_expert:hover{
+    opacity: 0.8;
+}
+/* END INFOR_IMPLOYER */
+
+/* EQUIPMENT */
+.modern_equipment{
+    /* background-color: #1691E2; */
+    margin-bottom: 20px;
+}
+.equipment_title{
+    width: 1140px;
+    margin: 0 auto;
+}
+.modern_equipment .equipment_title h2 {
+    position: relative;
+    display: inline-block;
+    color: #1691E2;
+    font-weight: normal;
+}
+
+.modern_equipment .equipment_title h2::after {
+    content: "";
+    /* display: block; */
+    height: 1px;
+    position: absolute;
+    bottom: -16px;
+    /* left: calc(50% - 35px); */
+    left: 0;
+    border-bottom: 5px solid #5D5D5D;
+    width: 70px;
+    padding-bottom: 10px;
+}
+
+.modern_equipment .equipment_title p {
+    margin: 25px 0 35px;
+}
+.equipment__container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 1140px;
+    margin: 0 auto;
+}
+.equipment__container .equipment__item{
+    height: 250px;
+}
+.equipment__container .equipment__item img{
+    width: 100%;
+    height: 100%;
+    
+}
+.sub__wrapper{
+    background-color: #1691E2;
+}
+.equipment__container{
+    background-color: white;
+    padding: 0 3px;
+}
+/* END EQUIPMENT */
+
+/* EFFECTIVE_THERAPY */
+.effective_therapy .effective_therapy_title h2 {
+    position: relative;
+    display: inline-block;
+    color: #1691E2;
+    font-weight: normal;
+}
+
+.effective_therapy .effective_therapy_title h2::after {
+    content: "";
+    /* display: block; */
+    height: 1px;
+    position: absolute;
+    bottom: -16px;
+    /* left: calc(50% - 35px); */
+    left: 0;
+    border-bottom: 5px solid #5D5D5D;
+    width: 70px;
+    padding-bottom: 10px;
+}
+
+.effective_therapy .effective_therapy_title p {
+    margin: 25px 0 35px;
+}
+/* END EFFECTIVE_THERAPY */
