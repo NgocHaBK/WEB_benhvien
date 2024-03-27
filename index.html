@@ -30,71 +30,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
         integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <!-- MY CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+        <!-- MY CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/base.css">
 
     <title>BK HOSPIAL</title>
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-        <div class="header_content">
-            <div class="hospital_logo">
-                <a href="#">
-                    <img class="header_logo" src="./img/HCMUT_official_logo.png" alt="hospital_logo">
-                    <h2>Bách Khoa <br> Hospital</h2>
-                </a>
-            </div>
-            <nav class="logo_list">
-                <div class="logo_list__location">
-                    <a class="number" href="tel:0855628333">
-                        <i class="fa-sharp fa-regular fa-location-dot"></i>
-                        <span>Thành Phố Hồ Chí Minh <br>
-                        0855 - 628 - 333 </span>
-                    </a>
+    <section class="header-nav">
+        <header>
+            <div class="wrapper">
+                <div class="header_content">
+                    <div class="hospital_logo">
+                        <a href="#">
+                            <img class="header_logo" src="./img/HCMUT_official_logo.png" alt="hospital_logo">
+                            <h2>Bách Khoa <br> Hospital</h2>
+                        </a>
+                    </div>
+                    <nav class="logo_list">
+                        <div class="logo_list__location">
+                            <a class="number" href="tel:0855628333">
+                                <i class="fa-sharp fa-regular fa-location-dot"></i>
+                                <span>Thành Phố Hồ Chí Minh <br>
+                                    0855 - 628 - 333 </span>
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">
+                                    <i class="fa-regular fa-users-medical"></i>
+                                    Dành cho khách hàng
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fa-regular fa-headphones"></i>
+                                    Hỏi đáp</a></li>
+                            <li><a href="#">
+                                    <i class="fa-duotone fa-calendar-days"></i>
+                                    Đặt lịch khám</a></li>
+                        </ul>
+                    </nav>
                 </div>
+        
+            </div>
+        </header>
+        <nav class="list">
+            <div class="wrapper">
                 <ul>
                     <li><a href="#">
-                        <i class="fa-regular fa-users-medical"></i>
-                        Dành cho khách hàng
-                    </a></li>
+                            Giới thiệu
+                        </a></li>
                     <li><a href="#">
-                        <i class="fa-regular fa-headphones"></i>
-                        Hỏi đáp</a></li>
+                            Chuyên Khoa
+                        </a></li>
                     <li><a href="#">
-                        <i class="fa-duotone fa-calendar-days"></i>
-                        Đặt lịch khám</a></li>
+                            Chuyên gia - Bác sĩ
+                        </a></li>
+                    <li><a href="#">
+                            Thành tựu
+                        </a></li>
+                    <li><a href="#">
+                            Tiện Nghi
+                        </a></li>
+                    <li><a href="#">
+                            Liên Hệ
+                        </a></li>
                 </ul>
-            </nav>
-        </div>
-        
-        </div>
-    </header>
-    <nav class="list">
-        <div class="wrapper">
-        <ul>
-            <li><a href="#">
-                    Giới thiệu
-                </a></li>
-            <li><a href="#">
-                    Chuyên Khoa
-                </a></li>
-            <li><a href="#">
-                    Chuyên gia - Bác sĩ
-                </a></li>
-            <li><a href="#">
-                    Thành tựu
-                </a></li>
-            <li><a href="#">
-                    Tin Tức
-                </a></li>
-            <li><a href="#">
-                    Liên Hệ
-                </a></li>
-        </ul>
-        </div>
-    </nav>
+            </div>
+        </nav>
+    </section>
+    
     <section class="carousel">
         <div class="img">
             <img src="./img/banner-kham-vip-ivf-desk.jpg" alt="hinh 1">
@@ -266,28 +270,93 @@
         <div class="sub__wrapper">
         <div class="equipment__container">
             <div class="equipment__item">
-                <img src="./img/thiet-bi-robot-modus-v-synaptive.jpg" alt="">
+                <img src="./img/1.jpg" alt="">
+                
+                <a href="./img/1.jpg" data-fancybox="gallery" data-caption=
+                "Máy phẫu thuật khúc xạ Femtosecond laser VISUMAX 800">
+                <div class="equipment-layer">
+                    <h3>Máy phẫu thuật khúc xạ Femtosecond laser VISUMAX 800</h3>
+                    <p>Bước tiến đột phá từ công nghệ ReLEx SMILE. Mổ cận thị SMILE PRO đang là lựa chọn hoàn hảo nhất cho khách hàng. SMILE
+                    PRO giảm hơn 80% tình trạng khô...</p>
+                </div>
+                </a>
+
             </div>
             <div class="equipment__item">
-                <img src="./img/He-thong-phau-thuat-robot.jpg" alt="">
+                <img src="./img/2.jpg" alt="">
+                <a href="./img/2.jpg" data-fancybox="gallery" data-caption=
+                "Máy chụp cắt lớp võng mạc quang học OCT Cirrus 6000">
+                <div class="equipment-layer">
+                    <h3>Máy chụp cắt lớp võng mạc quang học OCT Cirrus 6000</h3>
+                    <p>Cirrus 6000 là thế hệ mới nhất trong các thiết bị chụp đáy mắt OCT của hãng Carl Zeiss (Đức). Thiết bị mang tới khả năng
+                    chụp ảnh tốc độ cao với...</p>
+                </div>
+                </a>
             </div>
             <div class="equipment__item">
-                <img src="./img/He-thong-nuoi-cay-phoi-ung-dung-ai.jpg" alt="">
+                <img src="./img/3.jpg" alt="">
+                <a href="./img/3.jpg" data-fancybox="gallery" data-caption="Máy chụp CT 768 lát cắt">
+                <div class="equipment-layer">
+                    <h3>Máy chụp CT 768 lát cắt</h3>
+                    <p>Somatom Drive (Siemens - Đức) là hệ thống chụp cắt lớp vi tính (CT) hai đầu bóng cao cấp nhất hiện nay với khả năng tái
+                    tạo lên đến 768 lát cắt giúp...</p>
+                </div>
+                </a>
             </div>
             <div class="equipment__item">
-                <img src="./img/ghe-tien-dinh.jpg" alt="">
+                <img src="./img/4.jpg" alt="">
+                <a href="./img/4.jpg" data-fancybox="gallery" data-caption=
+                "Máy phẫu thuật khúc xạ Excimer laser Mel 90">
+                <div class="equipment-layer">
+                    <h3>Máy phẫu thuật khúc xạ Excimer laser Mel 90</h3>
+                    <p>Máy Laser Excimer tiên tiến, được thiết kế đặc biệt cho nhu cầu của bác sĩ phẫu thuật khúc xạ hiện đại. Mel 90 có tính
+                    năng vượt trội như chức năng...</p>
+                </div>
+                </a>
             </div>
             <div class="equipment__item">
-                <img src="./img/may-chup-ct-768-cat-lat.jpg" alt="">
+            
+                <img src="./img/5.jpg" alt="">
+                <a href="./img/5.jpg" data-fancybox="gallery" data-caption=
+                "Hệ thống Robot Modus V Synaptive duy nhất tại Việt Nam">
+                <div class="equipment-layer">
+                    <h3>Hệ thống Robot Modus V Synaptive duy nhất tại Việt Nam</h3>
+                    <p>Hệ thống Robot Modus V Synaptive được sử dụng trong mổ não duy nhất tại Việt Nam hiện nay. Trên thế giới hiện chỉ mới có
+                    10 nước sử dụng robot này. Sự...</p>
+                </div>
+                </a>
             </div>
             <div class="equipment__item">
-                <img src="./img/He-thong-chu-mri-the-he-moi.jpg" alt="">
+                <img src="./img/6.jpg" alt="">
+                <a href="./img/6.jpg" data-fancybox="gallery" data-caption="Hệ thống phẫu thuật robot">
+                <div class="equipment-layer">
+                    <h3>Hệ thống phẫu thuật robot</h3>
+                    <p>BVĐK Tâm Anh đầu tư phòng mổ Hybrid vô khuẩn hiện đại nhất hiện nay kết hợp công nghệ phẫu thuật bằng hệ thống robot
+                    Artis Pheno (Siemens) - đầu tiên...</p>
+                </div>
+                </a>
             </div>
             <div class="equipment__item">
-                <img src="./img/may-sieu-am-4d-1.jpg" alt="">
+                <img src="./img/7.jpg" alt="">
+                <a href="./img/7.jpg" data-fancybox="gallery" data-caption="Hệ thống nuôi cấy phôi ứng dụng trí tuệ nhân tạo">
+                <div class="equipment-layer">
+                    <h3>Hệ thống nuôi cấy phôi ứng dụng trí tuệ nhân tạo</h3>
+                    <p>Tủ nuôi cấy phôi Timelapse Geri®️+ kết hợp trí tuệ nhân tạo AI (với phần mềm đánh giá phôi tự động Eeva) được trang bị
+                    kính hiển vi riêng biệt, camera...</p>
+                </div>
+                </a>
             </div>
             <div class="equipment__item">
-                <img src="./img/chup-nhu-anh.jpg" alt="">
+                <img src="./img/8.jpg" alt="">
+                <a href="./img/8.jpg" data-fancybox="gallery" data-caption=
+                "Máy phẫu thuật khúc xạ Femtosecond laser VISUMAX 800">
+                <div class="equipment-layer">
+                    <h3>Máy phẫu thuật khúc xạ Femtosecond laser VISUMAX 800</h3>
+                    <p>Bước tiến đột phá từ công nghệ ReLEx SMILE. Mổ cận thị SMILE PRO đang là lựa chọn hoàn hảo nhất cho khách
+                        hàng. SMILE
+                        PRO giảm hơn 80% tình trạng khô...</p>
+                </div>
+                </a>
             </div>
         </div>
         </div>
@@ -300,12 +369,199 @@
             <h2>Hiệu quả điều trị cao - Thành tựu nổi bật</h2>
             <p>Ứng dụng kỹ thuật tiên tiến, phác đồ chuyên biệt, tăng tỷ lệ thành công.</p>
         </div>
+        <div class="effective_therapy_content">
+            <div class="effective_way_img">
+                <img src="./img/way_1.jpg" alt="way_1">
+                <div class="equipment-layer">
+                    <h3>Ứng dụng huyết tương giàu tiểu cầu tự thân trong IVF</h3>
+                    <p>BVĐK Tâm Anh là đơn vị đầu tiên được Bộ Y tế chính thức cấp phép nghiên cứu ứng dụng huyết tương giàu tiểu cầu tự thân
+                    điều trị nội mạc tử cung mỏng giúp tăng tỷ lệ mang thai lên đến 50% trong IVF.</p>
+                </div>
+            </div>
+            <div class="effective_way_img">
+                <img src="./img/way_2.jpg" alt="way_2">
+                <div class="equipment-layer">
+                    <h3>Phẫu thuật thay khớp, ghép xương nhân tạo</h3>
+                    <p>Điều trị bệnh lý cơ xương khớp, thay khớp, ghép xương nhân tạo Bệnh nhân ung thư xương, xương khớp hư hỏng nặng vẫn giữ
+                    được chi thể, hồi phục vận động nhờ phác đồ điều trị tiên tiến, kỹ thuật thay khớp toàn phần, ghép xương nhân tạo - duy
+                    nhất tại Tâm Anh.</p>
+                </div>
+            </div>
+            <div class="effective_way_img">
+                <img src="./img/way_3.jpg" alt="way_3">
+                <div class="equipment-layer">
+                    <h3>Chẩn đoán - điều trị hiệu quả Rối loạn tiền đình bằng kỹ thuật hiện đại</h3>
+                    <p>BVĐK Tâm Anh là đơn vị đầu tiên và duy nhất tại Việt Nam chẩn đoán và điều trị hiệu quả rối loạn tiền đình bằng Ảnh động
+                    nhãn đồ (VNG) kết hợp hệ thống tập phục hồi chức năng tiền đình (TRV) hiện đại hàng đầu thế giới.</p>
+                </div>
+            </div>
+            <div class="effective_way_img">
+                <img src="./img/way_4.jpg" alt="way_4">
+                <div class="equipment-layer">
+                    <h3>“Mổ trong bụng mẹ” cứu hàng trăm em bé bị Truyền máu song thai</h3>
+                    <p>Là bệnh viện phẫu thuật thành công ca truyền máu song thai đầu tiên tại Việt Nam vào tháng 3/2018, đến nay Tâm Anh đã
+                    lập nên những kỳ tích trong lĩnh vực y học bào thai, "giải cứu" hàng trăm thai nhi ngay trong bụng mẹ.</p>
+                </div>
+            </div>
+        </div>
+        <div class="view">
+            <a href="#" class="view_expert">
+                Xem các thành tựu
+            </a>
+        </div>
         </div>
     </section>
-    <section class="Departments"></section>
-    <section class="video_intro"></section>
+    <section class="hospital_system">
+        <div class="wrapper">
+        <div class="value_title">
+            <h2>
+                GIÁ TRỊ KHÁC BIỆT CỦA TÂM ANH
+            </h2>
+        </div>
+        <div class="hospital_system_content">
+
+            <div class="system_detail">
+                <div class="HCMlocation_img">
+                    <img src="./img/HN_branch.jpg" alt="HCM_branch">
+                </div>
+                <div class="location_text_map">
+                    <p>
+                        Bệnh viện Đa Khoa Tâm Anh TP.Hồ Chí Minh
+                    </p>
+                    <div class="location_contact">
+                        <a href="#" class="btn-contact">
+                            Liên hệ
+                        </a>
+                        <a href="#" class="btn-findmap">
+                            Tìm đường
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="system_detail">
+                <div class="HNlocation_img">
+                    <img src="./img/HCM_branch.jpg" alt="HN_branch">
+                </div>
+                <div class="location_text_map">
+                    <p>
+                        Bệnh viện Đa Khoa Tâm Anh Hà Nội
+                    </p>
+                    <div class="location_contact">
+                        <a href="#" class="btn-contact">
+                            Liên hệ
+                        </a>
+                        <a href="#" class="btn-findmap">
+                            Tìm đường
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="Departments">
+        <div class="wrapper">
+        <div class="value_title">
+            <h2>
+                CHUYÊN KHOA
+            </h2>
+        </div>
+        <div class="departments_content">
+            <div class="department_wrapper">
+            <div class="department__item">
+                <div class="item_icon">
+                    <img src="./img/khoa-da-lieu.png" alt="ảnh da liễu">
+                </div>
+                <a href="#">KHOA DA LIỄU <br>- THẨM MỸ DA</a>
+            </div>
+            </div>
+            <div class="department_wrapper">
+            <div class="department__item">
+                <div class="item_icon">
+                    <img src="./img/khoa-phuc-hoi-chuc-nang.png" alt="khoa hồi phục chức năng">
+                </div>
+                <a href="#">KHOA PHỤC HỒI <br>CHỨC NĂNG</a>
+            </div>
+            </div>
+            <div class="department_wrapper">
+            <div class="department__item">
+                <div class="item_icon">
+                    <img src="./img/khoa_ivf.png" alt="trung tâm hỗ trợ sinh sản">
+                </div>
+                <a href="#">TRUNG TÂM <br>HỖ TRỢ SINH SẢN</a>
+            </div>
+            </div>
+            <div class="department_wrapper">
+            <div class="department__item">
+                <div class="item_icon">
+                    <img src="./img/khoa_mat.png" alt="khoa mắt">
+                </div>
+                <a href="#">TRUNG TÂM MẮT <br> CÔNG NGHỆ CAO</a>
+            </div>
+            </div>
+            <div class="department_wrapper">
+            <div class="department__item">
+                <div class="item_icon">
+                    <img src="./img/khoa_rang.png" alt="khoa răng">
+                </div>
+                <a href="#">KHOA RĂNG HÀM MẶT</a>
+            </div>
+            </div>
+            <div class="department_wrapper">
+            <div class="department__item">
+                <div class="item_icon">
+                    <img src="./img/khoa_sanphukhoa.png" alt="khoa sản phụ khoa">
+                </div>
+                <a href="#">TRUNG TÂM <br>SẢN PHỤ KHOA</a>
+            </div>
+            </div>
+            <div class="department_wrapper">
+            <div class="department__item">
+                <div class="item_icon">
+                    <img src="./img/icon-khoa-hoi-suc-cap-cuu-icu.png" alt="khoa hồi sức cấp cứu">
+                </div>
+                <a href="#">KHOA HỒI SỨC <br> CẤP CỨU (ICU)</a>
+            </div>
+            </div>
+            <div class="department_wrapper">
+            <div class="department__item">
+                <div class="item_icon">
+                    <img src="./img/icon-khoa-ngoai-vu-2023.png" alt="khoa vú">
+                </div>
+                <a href="#">KHOA NGOẠI VÚ</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="video_intro">
+        <div class="video_content">
+            <div class="wrapper">
+                <div class="value_title">
+                    <h2>
+                       VIDEO
+                    </h2>
+                </div>
+                <div class="big_video">
+                    <iframe width="938" height="528" src="https://www.youtube.com/embed/Ef83M9iiJh0"
+                        title="Bệnh viện Đa khoa Tâm Anh - Đằng cấp và chất lượng| BVĐK Tâm Anh" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="big_video_title">Bệnh viện khách sạn hàng đầu Việt Nam</p>
+                </div>
+                <div class="small_video">
+                    <div class="small_video_item"></div>
+                    <div class="small_video_item"></div>
+                    <div class="small_video_item"></div>
+                    <div class="small_video_item"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer></footer>
 
+        
     <!-- JQUERY LIB -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -333,13 +589,33 @@
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $('.carousel').slick({
-        autoplay:true,
-        speed: 300,
-        slidesToShow: 1,
-        adaptiveHeight: true,
-        arrows:true
+       $(document).ready(function () {
+            $('.carousel').slick({
+                autoplay:true,
+                slidesToShow: 1,
+                // slidesToScroll giúp xác định mỗi lần nhấn mũi tên thì đi qua bao nhiều slides
+                speed: 8000,
+                // dots tạo nút bấm chuyển hướng
+                dots: true,
+            });
         });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
+    <script>
+        $('.departments_content').slick({
+                autoplay:true,
+                slidesToShow: 4,
+                slidesToScroll: 3,
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true
+            });
     </script>
 </body>
 </html>

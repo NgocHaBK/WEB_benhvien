@@ -1,5 +1,11 @@
 header{
     background-color: #102E9E;
+    
+}
+.header-nav{
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 .header_content .header_logo{
     width: 70px;
@@ -49,7 +55,10 @@ header{
 
 /* NAV START */
 .list{
-    margin: 10px;
+    /* margin: 10px; */
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
 }
 .list ul{
     display: flex;
@@ -115,18 +124,18 @@ header{
 /* END ACHIEVEMENT */
 
 /* VALUES */
-.values .value_title{
+ .value_title{
     text-align: center;
     position:relative;
 }
-.values .value_title h2{
+ .value_title h2{
     position: relative;
     color: #1691E2;
     text-transform: uppercase;
     font-size: 24px;
     font-weight: normal;
 }
-.values .value_title::after{
+ .value_title::after{
     content:"";
     /* display: block; */
     height: 1px;
@@ -252,10 +261,10 @@ header{
     font-size: 15px;
     text-transform: uppercase;
 }
-.infor_employer .view{
+ .view{
     text-align: center;
 }
-.infor_employer .view_expert{
+ .view_expert{
     padding: 10px 30px;
     font-size: 24px;
     background-color: #1691E2;
@@ -265,7 +274,7 @@ header{
     text-decoration: none;
     color: white;
 }
-.infor_employer .view_expert:hover{
+ .view_expert:hover{
     opacity: 0.8;
 }
 /* END INFOR_IMPLOYER */
@@ -325,9 +334,50 @@ header{
     background-color: white;
     padding: 0 3px;
 }
+.equipment__item{
+    position: relative;
+}
+.equipment-layer{
+    background-color: rgba(39, 61, 201, 0.723);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    color: white;
+    opacity: 0;
+    transition: all .6s;
+}
+ .equipment-layer:hover{
+    opacity: 1;
+}
+.equipment-layer h3{
+    font-weight: 700;
+    margin-bottom: 10px;
+    transform: translateX(-10px);
+    overflow: hidden;
+    transition: all .6s;
+}
+ .equipment-layer:hover h3{
+    transform: translateX(0);
+}
+
+.equipment-layer p{
+    line-height: 23px;
+    transform: translateX(-10px);
+    transition: all .6s;
+    overflow: hidden;
+}
+ .equipment-layer:hover p {
+    transform: translateX(0);
+}
 /* END EQUIPMENT */
 
 /* EFFECTIVE_THERAPY */
+.effective_therapy{
+    margin-bottom: 40px;
+}
 .effective_therapy .effective_therapy_title h2 {
     position: relative;
     display: inline-block;
@@ -351,4 +401,174 @@ header{
 .effective_therapy .effective_therapy_title p {
     margin: 25px 0 35px;
 }
+.effective_therapy_content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 8px;
+    /* justify-content: space-around; */
+}
+.effective_therapy_content .effective_way_img{
+    position: relative;
+    /* padding: 8px; */
+}
+.effective_therapy_content img{
+    width: 100%;
+    height: 100%;
+    /* padding: 4px; */
+}
+.effective_way_img .equipment-layer p{
+    font-size: 85%;
+    line-height: 1.2;
+    text-align: justify;
+    /* padding-bottom: 5px; */
+    /* object-fit: cover; */
+}
+.effective_way_img .equipment-layer{
+   padding: 10px;
+}
 /* END EFFECTIVE_THERAPY */
+
+/* HOSPITAL_SYSTEM */
+.hospital_system .value_title{
+    margin-bottom: 20px;
+}
+.location_contact{
+    /* width: 200px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:5px
+}
+.system_detail a{
+
+    /* margin: 4px; */
+    background-color:#1691E2;
+    border: none ;
+    color: white;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    text-decoration: none;
+
+}
+.hospital_system_content{
+    display: flex;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    /* justify-content: space-around; */
+}
+.hospital_system_content img{
+    border-radius: 5px;
+    width: 100%;
+}
+.system_detail{
+    padding: 0 8px;
+}
+.system_detail .btn-location,.btn-findmap{
+    border-radius: 5px solid transparent;
+}
+.location_text_map{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.location_text_map p{
+    font-size: 18px;
+}
+/* END HOSPITAL_SYSTEM */
+
+/* DEPARTMENTS */
+.Departments{
+    background-color: #f0f2f1;
+    padding: 40px 0 40px;
+}
+
+ .Departments .department__item{
+    width: 260px;
+    height: 280px;
+    /* background-color: gray; */
+    background-color: white;
+    /* padding: 15px; */
+    text-align: center;
+    border: 10px solid #f0f2f1;
+}
+.departments_content{
+    padding-top: 30px;
+    position: relative;
+}
+.department__item .item_icon img{
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+}
+.department__item .item_icon{
+    /* display: inline-block; */
+    width: 110px;
+    height: 110px;
+    padding: 15px;
+    border-radius: 50%;
+    border: 5px solid #1692E3;
+    overflow: hidden;
+    transition: all .3s;
+    margin: 20px auto;
+}
+.department__item a{
+    text-decoration: none;
+    color: black;
+}
+.department__item:hover .item_icon{
+    background-color: #1692E3;
+    
+    
+}
+.department__item:hover .item_icon img{
+    filter: brightness(0) invert(1);
+}
+.Departments .slick-prev{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -10px;
+    top: calc(50% +20px);
+    z-index: 99;
+    border-radius: 30px;
+    margin: 0;
+    background: #869791;
+    /* filter: Alpha(Opacity=50); */
+    opacity: 0.5;
+    border: 1px solid #fff;
+    color: #f0f2f1;
+}
+.Departments .slick-next{
+    text-align: center;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: -10px;
+        top: calc(50%);
+        z-index: 99;
+        border-radius: 30px;
+        margin: 0;
+        background: #869791;
+        /* filter: Alpha(Opacity=50); */
+        opacity: 0.5;
+        border: 1px solid #fff;
+        color: #f0f2f1;
+}
+/* END HOSPITAL_SYSTEM */
+/* VIDEO */
+.big_video{
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 16px;
+}
+.big_video .big_video_title{
+    margin-top: 10px;
+}
+/* END VIDEO */
