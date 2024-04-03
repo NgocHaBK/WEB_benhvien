@@ -28,13 +28,19 @@ header{
     top: 0;
     z-index: 999;
 }
+.hospital_logo-link{
+    display: flex;
+}
 .header_content .header_logo{
     width: 70px;
 }
+.hospital_logo_text{
+    display: inline-block;
+    line-height: 70px;
+}
 .header_content .hospital_logo h2{
     display: inline-block;
-    color: white;
-    text-align: left;
+    color: #ECF071;
     margin-left: 5px;
 }
 .header_content{
