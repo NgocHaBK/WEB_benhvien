@@ -32,6 +32,7 @@ header {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    align-items: center;
     padding: 16px 0;
     color: white;
 }
@@ -134,8 +135,13 @@ header {
 /* ACHIEVEMENT CSS */
 .achievement_thanh_tuu{
     background-color: #f0f2f1;
+    padding-bottom: 20px;
 }
-
+.pagination_wrapper{
+    display: flex;
+    justify-content: center;
+    
+}
 .achievement_item_title{
     height: 50px;
     padding: 16px 0;

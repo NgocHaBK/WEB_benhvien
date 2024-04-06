@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="/css/base.css">
+</head>
+<body>
+    <div class="content">
+        <div class="img">
+            
+            <img src="./img/background_BK.jpg" alt="bk_br">
+            
+        </div>
+        <div class="main">
+            <input type="checkbox" id="chk" aria-hidden="true">
+            <div class="signup">
+                <form>
+                    <label for="chk" aria-hidden="true">Sign up</label>
+                    <div className="underline"></div>
+                    <div class="inputs">
+                        <div class="usericon">
+                            <img src="./firebase-react/src/components/img/person.png" alt="user_img">
+                            <input type="text" name="txt" placeholder="User name ..." required>
+                        </div>
+        
+                        <div class="emailicon">
+                            <img src="./firebase-react/src/components/img/email.png" alt="">
+                            <input type="email" name="email" placeholder="Email ..." required>
+                        </div>
+                        <div class="pwdicon">
+                            <img src="./firebase-react/src/components/img/password.png" alt="">
+                            <input type="password" name="pswd" placeholder="Password ..." required>
+                        </div>
+                    </div>
+                    <button>SignUp</button>
+                </form>
+            </div>
+        
+            <div class="login">
+                <form action="">
+                    <label for="chk" aria-hidden="true">Sign In</label>
+                    <div class="inputs">
+                        <div class="usericon">
+                            <img src="./firebase-react/src/components/img/person.png" alt="user_img">
+                            <input type="text" name="txt" placeholder="User name ..." required>
+                        </div>
+        
+                        <div class="emailicon">
+                            <img src="./firebase-react/src/components/img/email.png" alt="">
+                            <input type="email" name="email" placeholder="Email ..." required>
+                        </div>
+                    </div>
+                    <div class="signin">
+                    <button>Sign In</button>
+                    <button>Sign In With Google</button>
+                    </div>
+                </form>
+                <div class="wrapper_">
+                    <div class="have_anAccount">Chưa có tài khoản? <span>Đăng kí!</span></div>
+                    <div class="forgot-password"> Quên mật khẩu? <span>Nhấn vào đây!</span></div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    
+</body>
+</html>
