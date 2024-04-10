@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logoBK.png">
     <!-- CSS FONT_ROBOTO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,9 +39,8 @@
     <title>BK HOSPIAL</title>
 </head>
 <body>
-        <a href="#" class="back-to-top">
-            <i class="fa-sharp fa-light fa-arrow-up"></i>
-        </a>
+    
+        
  
     <section class="header-nav" id=#header_>
         <header>
@@ -82,22 +82,19 @@
         <nav class="list">
             <div class="wrapper">
                 <ul>
-                    <li><a href="#">
+                    <li class="active"><a href="./index.html">
                             Giới thiệu
                         </a></li>
                     <li><a href="#">
                             Chuyên Khoa
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="./specialist-doctor1.html">
                             Chuyên gia - Bác sĩ
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="./thanh_tuu.html">
                             Thành tựu
                         </a></li>
-                    <li><a href="#">
-                            Tiện Nghi
-                        </a></li>
-                    <li><a href="#">
+                    <li><a href="contact.html">
                             Liên Hệ
                         </a></li>
                 </ul>
@@ -436,10 +433,10 @@
                         Bệnh viện Đa Khoa Bách Khoa TP.Hồ Chí Minh
                     </p>
                     <div class="location_contact">
-                        <a href="#" class="btn-contact">
+                        <a href="./contact.html" class="btn-contact">
                             Liên hệ
                         </a>
-                        <a href="#" class="btn-findmap">
+                        <a href="https://maps.app.goo.gl/7NtCf3fzsVu4gQhs5" class="btn-findmap" target="_blank">
                             Tìm đường
                         </a>
                     </div>
@@ -455,10 +452,10 @@
                         Bệnh viện Đa Khoa Bách Khoa Hà Nội
                     </p>
                     <div class="location_contact">
-                        <a href="#" class="btn-contact">
+                        <a href="./contact.html" class="btn-contact">
                             Liên hệ
                         </a>
-                        <a href="#" class="btn-findmap">
+                        <a href="https://maps.app.goo.gl/7NtCf3fzsVu4gQhs5" class="btn-findmap" target="_blank">
                             Tìm đường
                         </a>
                     </div>
@@ -677,7 +674,12 @@
         </div>
     </footer>
 
-        
+    <a href="#" class=" back-to-top cd-top text-replace js-cd-top "><i class="fa-sharp fa-light fa-arrow-up"></i></a>
+    
+
+        <!-- back-to-top js -->
+        <script src="./js/back-to-top-master/assets/js/main.js"></script>
+    <script src="./js/back-to-top-master/assets/js/util.js"></script>
     <!-- JQUERY LIB -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -713,6 +715,7 @@
                 speed: 3000,
                 // dots tạo nút bấm chuyển hướng
                 dots: true,
+                arrows:false,
             });
         });
     </script>
