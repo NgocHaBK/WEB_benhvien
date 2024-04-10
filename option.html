@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logoBK.png">
+    <title>BK HOSPIAL</title>
+    <style>
+        .center-line {
+            width: 80px;
+            /* Độ dài của đoạn thẳng */
+            height: 6px;
+            /* Độ dày của đoạn thẳng */
+            background-color: #5d5d5d;
+            /* Màu sắc của đoạn thẳng */
+            margin-top: 5px;
+            /* Cách dòng chữ ở trên 10px */
+            margin-left: auto;
+            /* Căn giữa theo chiều ngang */
+            margin-right: auto;
+            /* Căn giữa theo chiều ngang */
+            position: relative;
+        }
+
+        .text_chuyen_gia {
+            color: #1691e2;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            margin: 10px 5px 0px 0px;
+            /*cách trên, cách dưới, cách trái, cách phải*/
+            padding: 0px 0px 5px;
+            font-weight: 500;
+        }
+
+        #search {
+            /*dùng cho id*/
+            width: 198px;
+            height: 34px;
+            border-radius: 20px;
+            padding-right: 30px;
+        }
+
+        .fa-search {
+            position: relative;
+            /* Thiết lập vị trí tương đối cho icon */
+            left: -25px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            padding: 12px 48px;
+            color: #333;
+            background-color: #f0f2f1;
+            margin: top;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-container {
+            text-align: center;
+            /* Căn giữa các button theo chiều ngang */
+            margin-top: 20px;
+            /* Cách dòng chữ ở trên một khoảng cách 20px */
+        }
+
+        .blue {
+            background-color: #1691e2 !important;
+            color: #fff;
+        }
+
+        .dropdown-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .dropdown-container .dropdown {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 10px 10px;
+            border: 1px solid #ccc;
+            width: 250px;
+            /*height: 30px; */
+            color: #686868;
+            background-color: #fff;
+            text-align: left;
+            border-radius: 5px;
+            font-size: large;
+        }
+    </style>
+    <script>
+        function changeColor(button) {
+            // Đặt tất cả các button về màu gốc
+            var buttons = document.getElementsByClassName("btn");
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("blue");
+            }
+
+            // Đặt màu của button được click là màu xanh dương
+            button.classList.add("blue");
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div style="text-align: center; position: relative;">
+        <input type="search" id="search" name="search" style="color: #686868; border: 1px solid #ccc;"
+            placeholder="Tìm bác sĩ">
+        <a href="#thien">
+            <i class="fa fa-search"></i>
+        </a>
+    </div>
+    <h1 class="text_chuyen_gia">CHUYÊN GIA - BÁC SĨ</h1>
+    <div class="center-line"></div>
+    <div class="btn-container">
+        <button class="btn" onclick="changeColor(this)">TOÀN HỆ THỐNG</button>
+        <button class="btn" onclick="changeColor(this)">HÀ NỘI</button>
+        <button class="btn" onclick="changeColor(this)">TP HCM</button>
+        <button class="btn" onclick="changeColor(this)">HỆ THỐNG</button>
+    </div>
+    <div class="dropdown-container">
+        <select id="dropdown1" class="dropdown">
+            <option value="CHUYÊN KHOA">CHUYÊN KHOA</option>
+            <option value="Chấn thương chỉnh hình">Chấn thương chỉnh hình</option>
+            <option value="Khoa Da Liễu">Khoa Da Liễu</option>
+            <option value="Khoa Nội tổng hợp">Khoa Nội tổng hợp</option>
+        </select>
+        <select id="dropdown2" class="dropdown">
+            <option value="CHỨC VỤ">CHỨC VỤ</option>
+            <option value="Cố vấn chuyên môn">Cố vấn chuyên môn</option>
+            <option value="Giám đốc phó khoa">Giám đốc phó khoa</option>
+            <option value="Khoa Nội tổng hợp">Khoa Nội tổng hợp</option>
+        </select>
+        <select id="dropdown2" class="dropdown">
+            <option value="HỌC HÀM">HỌC HÀM</option>
+            <option value="Giáo sư">Giáo sư</option>
+            <option value="Phó Giáo Sư">Phó Giáo Sư</option>
+        </select>
+        <select id="dropdown4" class="dropdown">
+            <option value="HỌC VỊ">HỌC VỊ</option>
+            <option value="Tiến Sĩ">Tiến Sĩ</option>
+            <option value="Thạc Sĩ">Thạc Sĩ</option>
+            <option value="Cử Nhân">Cử Nhân</option>
+        </select>
+    </div>
+</body>
+
+</html>
