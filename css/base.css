@@ -179,11 +179,42 @@ header {
     padding: 10px 20px;
 }
 
-.list ul a:hover {
+.list ul li.non-dropdown a:hover {
     color: #23527c;
     background-color: #eee;
 }
 .list ul li.active{
+    color: white;
+}
+
+.list ul li.dropdown_layer{
+    position: relative;
+    display: inline-block;
+    /* overflow: hidden; */
+}
+ .list ul li .dropdown-content{
+    /* opacity: 0; */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: all .5s;
+    display: none;
+}
+.list ul li .dropdown-content a {
+    color: black;
+    padding: 10px 14px;
+    text-decoration: none;
+    /* display: none; */
+    /* opacity: 0; */
+}
+
+.list ul .dropdown_layer:hover .dropdown-content{
+    display: block;
+    background-color: #337ab7;
+}
+.list ul li .dropdown-content a:hover{
     color: white;
 }
 .list ul li {
@@ -243,7 +274,7 @@ header {
 /* END CONTACT */
 /* FOOTER */
 footer {
-    height: 405px;
+    height: 58vh;
     background-color: #274DBEFC;
 }
 
@@ -320,7 +351,7 @@ footer {
 }
 
 .footer_item_location i,
-p {
+.footer_item_location p {
     display: inline-block;
     color: white;
 }
@@ -359,10 +390,7 @@ p {
     margin: 0;
 }
 .mail i,
-p {
-    display: inline-block;
-    color: white;
-}
+
 
 /* .footer_item_hcm {
     margin-bottom: 10px;
@@ -370,6 +398,7 @@ p {
 
 .time-email p {
     font-size: 14px;
+    color: white;
 }
 
 .hcm_number a {
@@ -383,6 +412,7 @@ p {
 
 .company_infor p {
     line-height: 26px;
+    color: white;
 }
 
 /* 

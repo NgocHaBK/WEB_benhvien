@@ -278,6 +278,7 @@
     transform: translateX(-10px);
     overflow: hidden;
     transition: all .6s;
+    font-size: 18px !important;
 }
  .equipment-layer:hover h3{
     transform: translateX(0);
@@ -321,29 +322,29 @@
 .effective_therapy .effective_therapy_title p {
     margin: 25px 0 35px;
 }
-.effective_therapy_content{
+.effective_therapy .effective_therapy_content{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 8px;
     /* justify-content: space-around; */
 }
-.effective_therapy_content .effective_way_img{
+.effective_therapy .effective_therapy_content .effective_way_img{
     position: relative;
     /* padding: 8px; */
 }
-.effective_therapy_content img{
+.effective_therapy .effective_therapy_content img{
     width: 100%;
     height: 100%;
     /* padding: 4px; */
 }
-.effective_way_img .equipment-layer p{
+.effective_therapy .effective_way_img .equipment-layer p{
     font-size: 85%;
     line-height: 1.2;
     text-align: justify;
     /* padding-bottom: 5px; */
     /* object-fit: cover; */
 }
-.effective_way_img .equipment-layer{
+.effective_therapy .effective_way_img .equipment-layer{
    padding: 10px;
 }
 /* END EFFECTIVE_THERAPY */
@@ -515,107 +516,7 @@
 
 
 /* THÀNH TỰU CSS */
-.header-nav {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
 
-.hospital_logo-link {
-    display: flex;
-}
-
-.header_content .header_logo {
-    width: 70px;
-}
-
-.hospital_logo_text {
-    display: inline-block;
-    line-height: 70px;
-}
-
-.header_content .hospital_logo h2 {
-    display: inline-block;
-    color: #ECF071;
-    margin-left: 5px;
-}
-
-.header_content {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    padding: 16px 0;
-    color: white;
-}
-
-.header_content .logo_list ul {
-    list-style: none;
-
-}
-
-.header_content .logo_list li {
-    display: inline-block;
-    margin: 0px 10px;
-}
-
-.header_content .logo_list li a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-}
-
-.header_content .logo_list {
-    /* line-height: calc(111 / 16); */
-    padding: 10px 0;
-}
-
-.header_content .logo_list__location a {
-    color: #FFDF5F;
-    text-decoration: none;
-    display: inline-block;
-    padding-bottom: 16px;
-}
-
-.header_content .logo_list ul i {
-    color: #7CC5EA;
-}
-
-/* END HEADER */
-
-/* NAV START */
-.list {
-    /* margin: 10px; */
-    background-color: white;
-    height: 40px;
-    line-height: 40px;
-}
-
-.list ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    /* padding: 10px 0; */
-    /* line-height: 1.42857143; */
-}
-
-.list ul a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    color: #337ab7;
-    padding: 10px 20px;
-}
-
-.list ul a:hover {
-    color: #23527c;
-    background-color: #eee;
-}
-
-.list ul li {
-    height: 100%;
-    display: inline-block;
-}
 
 /* END NAV */
 

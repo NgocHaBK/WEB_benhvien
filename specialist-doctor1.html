@@ -42,64 +42,77 @@
     <body>
         <div id="main">
             <!-- header -->
-            <section class="header-nav" id=#header_>
-                <header>
-                    <div class="wrapper">
-                        <div class="header_content">
-                            <div class="hospital_logo">
-                                <a href="#">
-                                    <img class="header_logo" src="./img/HCMUT_official_logo.png" alt="hospital_logo">
-                                    <h2>Bách Khoa <br> Hospital</h2>
-                                </a>
+    <section class="header-nav" id=#header_>
+        <header>
+            <div class="wrapper">
+                <div class="header_content">
+                    <div class="hospital_logo">
+                        <a href="#" class="hospital_logo-link">
+                            <img class="header_logo" src="./img/HCMUT_official_logo.png" alt="hospital_logo">
+                            <div class="hospital_logo_text">
+                                <h2>Bách Khoa Hospital</h2>
                             </div>
-                            <nav class="logo_list">
-                                <div class="logo_list__location">
-                                    <a class="number" href="tel:0855628333">
-                                        <i class="fa-sharp fa-regular fa-location-dot"></i>
-                                        <span>Thành Phố Hồ Chí Minh <br>
-                                            0855 - 628 - 333 </span>
-                                    </a>
-                                </div>
-                                <ul>
-                                    <li><a href="#">
-                                            <i class="fa-regular fa-users-medical"></i>
-                                            Dành cho khách hàng
-                                        </a></li>
-                                    <li><a href="#">
-                                            <i class="fa-regular fa-headphones"></i>
-                                            Hỏi đáp</a></li>
-                                    <li><a href="#">
-                                            <i class="fa-duotone fa-calendar-days"></i>
-                                            Đặt lịch khám</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                
+                        </a>
                     </div>
-                </header>
-                <nav class="list">
-                    <div class="wrapper">
+                    <nav class="logo_list">
+                        <div class="logo_list__location">
+                            <a class="number" href="tel:0855628333">
+                                <i class="fa-sharp fa-regular fa-location-dot"></i>
+                                <span>Thành Phố Hồ Chí Minh -
+                                    0855 628 333 </span>
+                            </a>
+                        </div>
                         <ul>
-                            <li><a href="./index.html">
-                                    Giới thiệu
-                                </a></li>
+    
                             <li><a href="#">
-                                    Chuyên Khoa
+                                    <i class="fa-regular fa-headphones"></i>
+                                    Hỏi đáp</a></li>
+                            <li><a href="#">
+                                    <i class="fa-duotone fa-calendar-days"></i>
+                                    Đặt lịch khám</a></li>
+    
+                            <li><a href="#" style="color:#FFDF5F">
+    
+                                    Đăng nhập
                                 </a></li>
-                            <li class="active"><a href="./specialist-doctor1.html">
-                                    Chuyên gia - Bác sĩ
-                                </a></li>
-                            <li><a href="./thanh_tuu.html">
-                                    Thành tựu
-                                </a></li>
-                            <li><a href="./contact.html">
-                                    Liên Hệ
+                            <li><a href="#" style="color:#FFDF5F">
+    
+                                    Đăng ký
                                 </a></li>
                         </ul>
-                    </div>
-                </nav>
-            </section>
-
+                    </nav>
+                </div>
+    
+            </div>
+        </header>
+        <nav class="list">
+            <div class="wrapper">
+                <ul>
+                    <li class=" dropdown_layer">
+                        <a href="./index.html">Giới thiệu</a>
+                        <div class="dropdown-content">
+                            <a href="./gioi_thieu.html" class="a_drop">Option 1</a>
+                        </div>
+                    </li>
+                    <li class="non-dropdown"><a href="#">
+                            Chuyên Khoa
+                        </a></li>
+                    <li class="non-dropdown"><a href="./tien_nghi.html">
+                            Tiện nghi
+                        </a></li>
+                    <li class="active non-dropdown"><a href="./specialist-doctor1.html">
+                            Chuyên gia - Bác sĩ
+                        </a></li>
+                    <li class="non-dropdown"><a href="./thanh_tuu.html">
+                            Thành tựu
+                        </a></li>
+                    <li class="non-dropdown"><a href="contact.html">
+                            Liên Hệ
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
             <!-- breadcrumb -->
             <section id="breadcrumb-doctor">
                 <div class="container width-breadcrumb">
