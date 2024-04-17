@@ -1,24 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     /* line-height: 1.4; */
 }
-.wrapper{
+
+.wrapper {
     width: 1140px;
     margin: auto;
 }
-hr{
+
+hr {
     width: 100%;
     /* height: 8px; */
     border: 2px solid white;
     /* color: white; */
 }
-.active{
+
+.active {
     background-color: #b9be27fc;
     color: white;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -58,9 +62,10 @@ body .cd-top--is-visible {
     opacity: 1;
     transform: translateY(-4px);
 }
+
 header {
     background-color: #274DBEFC;
-
+    height: 117px;
 }
 
 .header-nav {
@@ -184,16 +189,18 @@ header {
     color: #23527c;
     background-color: #eee;
 }
-.list ul li.active{
+
+.list ul li.active {
     color: white;
 }
 
-.list ul li.dropdown_layer{
+.list ul li.dropdown_layer {
     position: relative;
     display: inline-block;
     /* overflow: hidden; */
 }
- .list ul li .dropdown-content{
+
+.list ul li .dropdown-content {
     /* opacity: 0; */
     position: absolute;
     background-color: #f9f9f9;
@@ -203,6 +210,7 @@ header {
     transition: all .5s;
     display: none;
 }
+
 .list ul li .dropdown-content a {
     color: black;
     padding: 10px 14px;
@@ -211,13 +219,15 @@ header {
     /* opacity: 0; */
 }
 
-.list ul .dropdown_layer:hover .dropdown-content{
+.list ul .dropdown_layer:hover .dropdown-content {
     display: block;
     background-color: #337ab7;
 }
-.list ul li .dropdown-content a:hover{
+
+.list ul li .dropdown-content a:hover {
     color: white;
 }
+
 .list ul li {
     height: 100%;
     display: inline-block;
@@ -387,9 +397,12 @@ footer {
     margin-right: 8px;
     color: white;
 }
-.footer_item_hcm .time-email p,.footer_item_hn .time-email p{
+
+.footer_item_hcm .time-email p,
+.footer_item_hn .time-email p {
     margin: 0;
 }
+
 .mail i,
 
 

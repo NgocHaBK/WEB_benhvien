@@ -1,0 +1,28 @@
+.container_list ul .dropdownable {
+    position: relative;
+
+}
+.dropdown {
+    position: absolute;
+
+    left: 0;
+    width: 200px;
+    display: none;
+}
+.container_list ul .dropdownable:hover{
+color: #23527c;
+background-color: #eee;
+}
+.container_list ul .dropdownable:hover .dropdown{
+    display: block;
+}
+.container_list .dropdown a{
+    display: block;
+    padding: 0;
+    width: 100%;
+    transition: all .3s;
+}
+.container_list .dropdown a:hover{
+    background-color:#154f68;
+    color: white;
+}
