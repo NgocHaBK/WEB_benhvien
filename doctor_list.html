@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- CSS FONT_ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-8106c2e05ae3cd7bfbb686f33d73a923.css?vsn=d">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/patient.css">
+</head>
+
+<body>
+    <section class="header-nav" id=#header_>
+        <header>
+            <div class="wrapper">
+                <div class="header_content">
+                    <div class="hospital_logo">
+                        <a href="#" class="hospital_logo-link">
+                            <img class="header_logo" src="./img/HCMUT_official_logo.png" alt="hospital_logo">
+                            <div class="hospital_logo_text">
+                                <h2>Bách Khoa Hospital</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <nav class="logo_list">
+                        <div class="logo_list__location">
+                            <a class="number" href="tel:0855628333">
+                                <i class="fa-sharp fa-regular fa-location-dot"></i>
+                                <span>Thành Phố Hồ Chí Minh -
+                                    0855 628 333 </span>
+                            </a>
+                        </div>
+                        <ul>
+
+                            <li><a href="#">
+                                    <i class="fa-regular fa-headphones"></i>
+                                    Hỏi đáp</a></li>
+                            <li><a href="#">
+                                    <i class="fa-duotone fa-calendar-days"></i>
+                                    Đặt lịch khám</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+            <div class="avatar_infor">
+                <a href="#">
+                    <img src="" alt="">
+                </a>
+            </div>
+        </header>
+        <nav class="list">
+            <div class="wrapper">
+                <div class="container_list">
+                    <ul>
+                        <li class="non-dropdown"><a href="./patient_list.html">
+                                Bệnh nhân
+                            </a></li>
+                        <li class="non-dropdown"><a href="./doctor_list.html">
+                                Bác sĩ
+                            </a></li>
+                        <li class="non-dropdown"><a href="./medicine.html">
+                                Thuốc
+                            </a></li>
+                    
+                        <li class="non-dropdown"><a href="#">
+                                Trang thiết bị
+                            </a></li>
+                    
+                        <li class="dropdownable"><a href="">Tài khoản</a>
+                            <div class="dropdown">
+                                <a href="#" class="a_drop">TK admin</a>
+                                <a href="#" class="a_drop">TK bác sĩ</a>
+                                <a href="#" class="a_drop">TK bệnh nhân</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <main>
+
+        <div class="container">
+            <div class="patient_list">
+                <div class="patient_list-title">
+                    <h3>DANH SÁCH BÁC SĨ</h3>
+                </div>
+                <div class="addpatient d-flex justify-content-between">
+                    <button class="btn-add text-bg-success rounded-1 ps-2 pe-2">
+                        <i class="fa-regular fa-plus"></i>
+                        Thêm
+                    </button>
+                
+                    <div class="find_patient p-lg-1 w-25">
+                        <label for="">Tìm kiếm bác sĩ:</label>
+                        <input type="text" placeholder="nhập CCCD" class="ps-1">
+                    </div>
+                </div>
+                <div class="patient_list_content">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                               
+                                <th scope="col">Họ tên</th>
+                                <th scope="col">CCCD</th>
+                                <th scope="col">Ngày xinh</th>
+                                <th scope="col">Giới tính</th>
+                                <th scope="col">SĐT</th>
+                                <th scope="col">Học vị</th>
+                                <th scope="col">Chuyên khoa</th>
+                                <th scope="col">Phòng</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td><a href="">MArk</a></td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td id="trash_bin">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-solid fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td><a href="">MArk</a></td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td id="trash_bin">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-solid fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td><a href="">MArk</a></td>
+                                <td>Otto</td>
+                                <td>74598375983749539</td>
+                                <td>hdfkjshdfkjshdkfjhs</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td id="trash_bin">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-solid fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
