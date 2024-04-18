@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/patient.css">
     <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="./css/tk_admin.css">
     <!-- <link rel="stylesheet" href="./css/registration_form.css"> -->
 </head>
 
@@ -109,7 +110,7 @@
         <div class="container">
             <div class="patient_list">
                 <div class="patient_list-title">
-                    <h3>DANH SÁCH BỆNH NHÂN</h3>
+                    <h3>DANH SÁCH BÁC SĨ</h3>
                 </div>
                 <div class="addpatient d-flex justify-content-between">
                     <button type="button" class="btn-add text-bg-success rounded-1 ps-2 pe-2" data-bs-toggle="modal"
@@ -118,10 +119,6 @@
                         Thêm
                     </button>
 
-                    <div class="find_patient p-lg-1 w-25">
-                        <label for="">Tìm kiếm bệnh nhân:</label>
-                        <input type="text" placeholder="nhập CCCD" class="ps-1">
-                    </div>
                 </div>
 
                 <!-- Modal -->
@@ -130,7 +127,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Thêm thông tin bệnh nhân</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Thêm thông tin bác sĩ</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -142,45 +139,19 @@
                                         <input type="text" class="form-control" id="name" name="name" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="cccd" class="form-label">CCCD</label>
-                                        <input type="text" class="form-control" id="cccd" name="cccd" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="birdate" class="form-label">Ngày sinh</label>
-                                        <input type="date" class="form-control" id="birdate" name="cccd" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label">Email</label>
-                                        <input type="text" class="form-control" id="email" name="cccd" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="number" class="form-label">Số điện thoại</label>
-                                        <input type="text" class="form-control" id="sdt" name="cccd" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="gender">Gender</label>
-                                        <select name="gender">
-                                            <option value="1">Male</option>
-                                            <option value="2">Female</option>
-                                            <option value="3">Others</option>
+                                        <label for="role">Quyền</label>
+                                        <select name="role" style="width: 100%;" class="role_option">
+                                            <option value="1">Bệnh nhân</option>
+                                            <option value="2">Bác sĩ</option>
+                                            <option value="3">Admin</option>
                                         </select>
                                     </div>
+
                                     <div class="mb-3">
-                                        <label for="letter" class="form-label">Introduction letter from</label>
-                                        <input type="text" name="letter" class="form-control" id="letter" required>
+                                        <label for="matkhau" class="form-label">Mật Khẩu</label>
+                                        <input type="text" class="form-control" id="mk" name="mk" required>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="addr" class="form-label">Địa chỉ</label>
-                                        <input type="text" name="addr" class="form-control" id="addr" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="health_id" class="form-label">Health ID</label>
-                                        <input type="text" name="health-id" class="form-control" id="health-id" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="health_rc" class="form-label">Health records</label>
-                                        <input type="text" name="health-rc" class="form-control" id="health-rc" required>
-                                    </div>
+
                                     <!-- Add more fields as needed -->
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </form>
@@ -193,12 +164,9 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">mã BN</th>
+                                <th scope="col">Tên đăng nhập</th>
                                 <th scope="col">Họ tên</th>
-                                <th scope="col">CCCD</th>
-                                <th scope="col">Ngày xinh</th>
-                                <th scope="col">Giới tính</th>
-                                <th scope="col">SĐT</th>
+                                <th scope="col">Quyền</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
@@ -208,9 +176,7 @@
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+
                                 <td id="trash_bin">
                                     <a href="#">
                                         <i class="fa-sharp fa-solid fa-trash"></i>
@@ -222,9 +188,7 @@
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+
                                 <td id="trash_bin">
                                     <a href="#">
                                         <i class="fa-sharp fa-solid fa-trash"></i>
@@ -236,9 +200,7 @@
                                 <td>sjdhfksdhfskj</td>
                                 <td>Otto</td>
                                 <td>74598375983749539</td>
-                                <td>hdfkjshdfkjshdkfjhs</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+
                                 <td id="trash_bin">
                                     <a href="#">
                                         <i class="fa-sharp fa-solid fa-trash"></i>
